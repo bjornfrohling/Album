@@ -6,15 +6,19 @@
 
 // Import libraries
 import React from 'react';
-import {AppRegistry} from 'react-native';
-import Header from './src/components/header';
+import {View, AppRegistry} from 'react-native';
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 // Create Component (function that retuns jsx)
 const App = () => {
   return (
     // jsx
     // Component nesting
-    <Header headerText={'Albums!!'}/>
+    <View>
+      <Header headerText={'Albums!!'} />
+      <AlbumList />
+    </View>
   );
 };
 
