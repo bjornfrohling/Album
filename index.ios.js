@@ -16,7 +16,7 @@ const App = () => {
   return (
     // jsx
     // Component nesting
-    <View>
+    <View style={{flex: 1}}>
       <Header headerText={'Albums'} />
       <AlbumList />
     </View>
