@@ -17,7 +17,7 @@ const App = () => {
     // jsx
     // Component nesting
     <View>
-      <Header headerText={'Albums!!'} />
+      <Header headerText={'Albums'} />
       <AlbumList />
     </View>
   );
