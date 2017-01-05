@@ -1,13 +1,14 @@
-import React from 'react'
-import {View, Text} from 'react-native'
+import React from 'react';
+import {Text} from 'react-native';
+import Card from './Card';
 
 const AlbumDetail = ({ album }) => {
         console.log(album.title);
 
     return (
-        <View>
+        <Card>
             <Text>{album.title} </Text>
-        </View>
+        </Card>
     );
 };
 

@@ -27,11 +27,17 @@ class AlbumList extends Component {
     console.log(this.state);
 
     return (
-      <View>
+      <View style={styles.viewStyle}>
         {this.renderAlbums()}
         </View>
       );
     }
+}
+
+const styles = {
+  viewStyle: {
+    marginTop: 10
+  }
 }
 
 export default AlbumList;
