@@ -2,19 +2,29 @@
 
 import React, {Component} from 'react';
 import {View, ScrollView} from 'react-native';
-import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
 
 class AlbumList extends Component {
   state = { albums: [] };
-
 // life cycle method
   componentWillMount() {
-    // Will be executed before component appears on screen
-    axios.get('https://rallycoding.herokuapp.com/api/music_albums')
-    .then(response => this.setState({ albums: response.data}));
-  }
+// Will be executed before component appears on screen
+
+fetch('https://rallycoding.herokuapp.com/api/music_albums')
+.then((response) =>  {
+    return response.json() 
+  })
+.then((responseData) => { 
+   return responseData;
+ })
+.then((data) => { 
+   console.log(data);
+   this.setState({ albums: data});
+ });
+}
+
+  
 
   renderAlbums() {
     return this.state.albums.map(album =>
