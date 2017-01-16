@@ -5,7 +5,7 @@ const Button = () => {
 
     return (
         <TouchableOpacity>
-        <Text>Click me</Text>
+            <Text>Click me</Text>
         </TouchableOpacity>
     );
 }

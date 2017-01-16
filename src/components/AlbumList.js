@@ -21,8 +21,7 @@ class AlbumList extends Component {
     }).then((data) => {
       console.log(data);
       this.setState({albums: data});
-    })
-    .catch((error) => {
+    }).catch((error) => {
       console.error(error);
     });
   }

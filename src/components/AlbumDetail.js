@@ -34,7 +34,7 @@ const AlbumDetail = ({album}) => {
                 }}/>
             </CardSection>
             <CardSection>
-                  <Button/>
+                <Button/>
             </CardSection>
 
         </Card>
